@@ -1,20 +1,30 @@
 <?php
-echo "Hello world!! <br>";
-echo "its really good";
-// this is comment
-?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+$age = true;
 
-<body>
-    <br>
-    <button>Order a pizza</button>
-</body>
+if ($age < 0) {
+    echo "You are 18+";
+} elseif ($age == 0 || $age == 1) {
+    echo "You are just born";
+} elseif ($age = true && $age == NAN) {
+    echo "Hey true";
+} else {
+    echo "you are in else";
+}
 
-</html>
+$ourVar = "b";
+switch ($ourVar) {
+    case 'A':
+        echo "Hey A";
+        break;
+    case 'B':
+        echo "Hey B";
+        break;
+
+    default:
+        echo "Hey B";
+        break;
+}
+
+$date = date("l");
+echo " {$date}";
